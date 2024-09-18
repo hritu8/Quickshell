@@ -1,20 +1,19 @@
 .page {
-    background-color: #f5f5f9;
+  background-color: #f5f5f9;
 }
 
 .board {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align the columns from the start of the row */
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 30px;
+  overflow-x: auto; /* Allow horizontal scrolling if there are too many columns */
 }
 
 .group-column {
-    width: 280px;
-    /* max-width: 200px;
-    min-width: 250px; */
-    margin: 0px 20px 40px 20px;
+  width: 260px;
+  margin: 0px 20px 40px 20px;
+  flex-shrink: 0; /* Prevent columns from shrinking */
 }
